@@ -1,0 +1,31 @@
+$breakpoint-sm: 600px;
+$breakpoint-md: 900px;
+$breakpoint-lg: 1300px;
+$breakpoint-xl: 1680px;
+:root {
+  --bg-primary: #c3c3b3;
+  --bg-secondary: #e1cecc;
+  --bg-peach: #efe1d4;
+  --color-dark-0: #000;
+  --gutter: 16px;
+  --spacing: 32px;
+  --body-font-family: 'Galaxie Copernicus', 'serif';
+  --secondary-font-family: 'Inter', 'sans-serif';
+  --body-font-size: 1rem;
+  --body-font-weight: 400;
+  --body-line-height: 1.5;
+  --body-color: #000;
+  --body-text-align: left;
+  --body-bg: #c3c3b3;
+  @media (min-width: $breakpoint-sm) {
+    --gutter: 24px;
+  }
+  @media (min-width: $breakpoint-md) {
+    --gutter: 40px;
+  }
+  @media (min-width: $breakpoint-lg) {
+    --gutter: 60px;
+  }
+  @media (min-width: $breakpoint-xl) {
+  }
+}
