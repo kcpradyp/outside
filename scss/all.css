@@ -742,8 +742,14 @@ hr.divider {
 }
 
 .section--title {
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   text-transform: capitalize;
+}
+
+@media (min-width: 1300px) {
+  .section--title {
+    margin-bottom: 3rem;
+  }
 }
 
 .members--info {
@@ -917,7 +923,7 @@ hr.divider {
 }
 
 .resources--info_text {
-  padding: 2rem 0;
+  padding: 1rem 0;
 }
 
 @media (min-width: 1300px) {
@@ -1009,7 +1015,13 @@ hr.divider {
 }
 
 .resources--featured {
-  padding-top: 2rem;
+  padding-top: 1rem;
+}
+
+@media (min-width: 1300px) {
+  .resources--featured {
+    padding-top: 2rem;
+  }
 }
 
 .resources--list_wrap {

@@ -16,8 +16,11 @@
     background-color: var(--bg-secondary);
   }
   &--title {
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
     text-transform: capitalize;
+    @media (min-width: $breakpoint-lg) {
+      margin-bottom: 3rem;
+    }
   }
 }
 @mixin card {
@@ -117,7 +120,7 @@
 .resources--info {
   @include info-box;
   &_text {
-    padding: 2rem 0;
+    padding: 1rem 0;
     @media (min-width: $breakpoint-lg) {
       padding: 2rem 0;
     }
@@ -144,7 +147,10 @@
   }
 }
 .resources--featured {
-  padding-top: 2rem;
+  padding-top: 1rem;
+  @media (min-width: $breakpoint-lg) {
+    padding-top: 2rem;
+  }
 }
 .resources--list {
   &_wrap {

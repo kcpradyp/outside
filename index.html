@@ -24,7 +24,7 @@
     <div id="wrapper">
       <section class="section section-members">
         <svg
-          class="svg-title align-right anim1"
+          class="svg-title align-right animated-title-1"
           width="1286"
           height="207"
           viewBox="0 0 1286 207"
@@ -72,12 +72,12 @@
               </div>
               <div class="col-lg-6 col-10">
                 <div class="members--info_text">
-                  <h2>A community of people lorem ipsum dolor sit amet</h2>
-                  <p class="p-primary">
+                  <h2 class="anim">A community of people lorem ipsum dolor sit amet</h2>
+                  <p class="p-primary anim">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor nnnn incididunt ut
                     labore et dolore magna aliqua.
                   </p>
-                  <a href="/" class="btn btn-primary"
+                  <a href="/" class="btn btn-primary anim"
                     ><span>Find Members</span>
                     <svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path
@@ -143,7 +143,7 @@
         </div>
       </section>
       <section class="section section-resources">
-        <svg class="svg-title anim1" viewBox="0 0 1286 285" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg class="svg-title animated-title-2" viewBox="0 0 1286 285" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g opacity="0.4">
             <path
               d="M204.946 284.428V225.917H55.8247C54.1994 200.725 53.7931 169.844 53.7931 132.056C53.7931 79.6398 55.0121 46.3211 57.45 0H-10C-7.96837 45.9148 -6.34307 82.4841 -6.34307 142.214C-6.34307 185.691 -7.96837 238.513 -10 284.428H204.946Z"
@@ -187,11 +187,11 @@
               </div>
               <div class="col-lg-6 col-10 order-lg-0">
                 <div class="resources--info_text">
-                  <h2>The go-to place for Shea resources lorem ipsum dolor sit amet</h2>
-                  <p class="p-primary">
+                  <h2 class="anim">The go-to place for Shea resources lorem ipsum dolor sit amet</h2>
+                  <p class="p-primary anim">
                     A one sentence statement that expands on this resource. Concise and digestible.
                   </p>
-                  <a href="/" class="btn btn-primary"
+                  <a href="/" class="btn btn-primary anim"
                     ><span>Find Resources</span>
                     <svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path
@@ -314,37 +314,6 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-    <script>
-      $(document).ready(function () {
-        $('.owl-carousel').owlCarousel({
-          dots: false,
-          margin: 60,
-          responsive: {
-            0: {
-              items: 1.5,
-              margin: 16,
-            },
-            599: {
-              items: 3,
-              margin: 32,
-            },
-            1300: {
-              items: 3,
-            },
-          },
-        });
-      });
-      gsap.registerPlugin(ScrollTrigger);
-      var tl = gsap.timeline({ defaults: { duration: 1 } });
-      tl.from('.anim1 path', {
-        // scrollTrigger: {
-        //   trigger: '.anim1 path',
-        //   toggleActions: 'restart pause reverse pause',
-        // },
-        y: 50,
-        stagger: 0.2,
-        opacity: 0,
-      });
-    </script>
+    <script src="./js/animation.js"></script>
   </body>
 </html>
