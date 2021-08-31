@@ -1,5 +1,5 @@
-#FEA Skill Test Project
+# FEA Skill Test Project
 
-##fonts
+## fonts
 
 fonts not used as of design. font family configured on css variables.
